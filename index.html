@@ -5,11 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  .bar1 {
-    fill: steelblue;
-  }
-  </style>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
 
   <title>CS 360/560 Spring 2019</title>
 
@@ -17,6 +13,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" integrity="sha256-2pUeJf+y0ltRPSbKOeJh09ipQFYxUdct5nTY6GAXswA=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
+  <style>
+  .bar1 {
+    fill: steelblue;
+  }
+  </style>
 </head>
 
 <!-- body -->
@@ -86,7 +87,6 @@
       <!-- todo: modify as necessary (or move visualizations to separate pages) -->
       <h2>Most Incidence Records by Police District</h2>
       <div id = "visusal1">
-        <script src="https://d3js.org/d3.v4.min.js"></script>
         <script>
           var margin = {top: 20, right: 20, left: 20, bottom 30},
           width = 960-margin.left-margin.right, height = 500-margin.top-margin.bottom;
@@ -384,3 +384,4 @@
 <!-- end body and html -->
 </body>
 </html>
+
