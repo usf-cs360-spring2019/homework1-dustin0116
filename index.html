@@ -50,25 +50,7 @@
               <span class="icon">
                 <i class="fas fa-chart-area"></i>
               </span>
-              <span>Visualization 1</span>
-            </a>
-          </div>
-
-          <div id="main-navbar" class="navbar-menu">
-            <a class="navbar-item" href="#vis1">
-              <span class="icon">
-                <i class="fas fa-chart-area"></i>
-              </span>
-              <span>Visualization 2</span>
-            </a>
-          </div>
-
-          <div id="main-navbar" class="navbar-menu">
-            <a class="navbar-item" href="#vis1">
-              <span class="icon">
-                <i class="fas fa-chart-area"></i>
-              </span>
-              <span>Visualization 3</span>
+              <span>Visualizations</span>
             </a>
           </div>
 
@@ -97,14 +79,21 @@
   <section class="section">
     <div class="container content">
       <!-- todo: modify as necessary (or move visualizations to separate pages) -->
-      <h2>Visualization 1</h2>
+      <h2>Most Incidence Records by Police District</h2>
+      <div id = "visusal1">
+        <script>
+          var margin = {top: 20, right: 20, left: 20, bottom 30}, width = 960, height = 500;
+          var x = d3.scaleBand().range([0, width]).paddingInner(0.1);
+          var y = d3.scaleLinear().range([height, 0]);
+
+          var svg = d3.select("visual1").append(svg);
+      </div>
 
       <svg width="100%" height="400" style="background-color: whitesmoke; border: 1px solid black;">
       </svg>
       <script src="https://d3js.org/d3.v4.min.js"></script>
       <script src="chart.js"></script>
       <script type="text/javascript">
-      d3.text()
       </script>
 
       <h3>Interpretation</h3>
@@ -133,7 +122,7 @@
   <section class="section">
     <div class="container content">
       <!-- todo: modify as necessary (or move visualizations to separate pages) -->
-      <h2>Visualization 2</h2>
+      <h2>Top Incident Records by Day of Week</h2>
 
       <svg width="100%" height="400" style="background-color: whitesmoke; border: 1px solid black;">
       </svg>
@@ -141,13 +130,13 @@
       <h3>Interpretation</h3>
 
       <p>
-        This is the number of police records based on police districts of December 2018.
+        This is a bar chart that shows the number of records by day of week.
       </p>
 
       <h3>Discussion</h3>
 
       <p>
-        I thought it'd be interesting to see which police areas of San Francisco has the most records, which would be in Central.
+        This shows what day of week has most incidents happen/record.
       </p>
 
       <h3>Credit</h3>
@@ -163,7 +152,7 @@
   <section class="section">
     <div class="container content">
       <!-- todo: modify as necessary (or move visualizations to separate pages) -->
-      <h2>Visualization 3</h2>
+      <h2>Most Vandalism Records in Day of Week</h2>
 
       <svg width="100%" height="400" style="background-color: whitesmoke; border: 1px solid black;">
       </svg>
@@ -171,13 +160,13 @@
       <h3>Interpretation</h3>
 
       <p>
-        This is the number of police records based on police districts of December 2018.
+        This line chart shows the number of vandalism incidents by day of week.
       </p>
 
       <h3>Discussion</h3>
 
       <p>
-        I thought it'd be interesting to see which police areas of San Francisco has the most records, which would be in Central.
+        There are way more vandalism incidents than I thought so I thought it'd be interesting to see which day of week has the most vandalism incidents of December 2018.
       </p>
 
       <h3>Credit</h3>
@@ -189,6 +178,16 @@
   </section>
 
   <hr class="container">
+  <section class="section">
+    <div class="container content">
+      <h2>Prototypes</h2>
+      <img src="Dashboard 1.jpg">
+      <img src="Dashboard 2.jpg">
+      <img src="Dashboard 3.jpg">
+  </section>
+
+  <hr class="container">
+
 
   <!-- grade section -->
   <section class="section">
@@ -289,7 +288,7 @@
         <div class="media-left">
           <p class="image is-128x128">
             <!-- todo: replace with your profile image -->
-            <img src="https://bulma.io/images/placeholders/128x128.png">
+            <img src="/profile.jpg">
           </p>
         </div>
 
@@ -339,4 +338,5 @@
 <!-- end body and html -->
 </body>
 </html>
+
 
