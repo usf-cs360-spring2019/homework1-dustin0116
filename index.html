@@ -11,6 +11,7 @@
   <!-- bulma 0.7.2 and font awesome v5.7.1 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" integrity="sha256-2pUeJf+y0ltRPSbKOeJh09ipQFYxUdct5nTY6GAXswA=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <!-- body -->
@@ -25,7 +26,7 @@
           Visualization Assignment
         </h1>
         <h2 class="subtitle">
-          Full Name
+          Yen Dah Hsiang
         </h2>
       </div>
     </div>
@@ -50,6 +51,24 @@
                 <i class="fas fa-chart-area"></i>
               </span>
               <span>Visualization 1</span>
+            </a>
+          </div>
+
+          <div id="main-navbar" class="navbar-menu">
+            <a class="navbar-item" href="#vis1">
+              <span class="icon">
+                <i class="fas fa-chart-area"></i>
+              </span>
+              <span>Visualization 2</span>
+            </a>
+          </div>
+
+          <div id="main-navbar" class="navbar-menu">
+            <a class="navbar-item" href="#vis1">
+              <span class="icon">
+                <i class="fas fa-chart-area"></i>
+              </span>
+              <span>Visualization 3</span>
             </a>
           </div>
 
@@ -82,28 +101,93 @@
 
       <svg width="100%" height="400" style="background-color: whitesmoke; border: 1px solid black;">
       </svg>
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+      <script src="chart.js"></script>
+      <script type="text/javascript">
+      d3.text()
+      </script>
 
       <h3>Interpretation</h3>
 
       <p>
-        If appropriate, provide a brief discussion of how to interpret this visualization (e.g. how the data is encoded) and how to interact with this visualization. Some of this discussion may not be necessary depending on the legends provided with the visualization.
+        This is the number of police records based on police districts of December 2018.
       </p>
 
       <h3>Discussion</h3>
 
       <p>
-        If appropriate, provide a brief discussion of the primary goal and findings of the visualization, any challenges encountered creating the visualization, and any other context as required by the assignment.
+        I thought it'd be interesting to see which police areas of San Francisco has the most records, which would be in Central.
       </p>
 
       <h3>Credit</h3>
 
       <p>
-        If appropriate, provide credit for the dataset, any code used, and design inspirations here. Unsufficient discussion here is a violation of the <a href="/syllabus.html#cheating-policy">academic honesty policy</a> and may result in an F grade for the assignment or the <em>entire</em> course.
+        Data is from https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783
       </p>
     </div>
   </section>
 
   <!-- separator between sections -->
+  <hr class="container">
+
+  <section class="section">
+    <div class="container content">
+      <!-- todo: modify as necessary (or move visualizations to separate pages) -->
+      <h2>Visualization 2</h2>
+
+      <svg width="100%" height="400" style="background-color: whitesmoke; border: 1px solid black;">
+      </svg>
+
+      <h3>Interpretation</h3>
+
+      <p>
+        This is the number of police records based on police districts of December 2018.
+      </p>
+
+      <h3>Discussion</h3>
+
+      <p>
+        I thought it'd be interesting to see which police areas of San Francisco has the most records, which would be in Central.
+      </p>
+
+      <h3>Credit</h3>
+
+      <p>
+        Data is from https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783
+      </p>
+    </div>
+  </section>
+
+  <hr class="container">
+
+  <section class="section">
+    <div class="container content">
+      <!-- todo: modify as necessary (or move visualizations to separate pages) -->
+      <h2>Visualization 3</h2>
+
+      <svg width="100%" height="400" style="background-color: whitesmoke; border: 1px solid black;">
+      </svg>
+
+      <h3>Interpretation</h3>
+
+      <p>
+        This is the number of police records based on police districts of December 2018.
+      </p>
+
+      <h3>Discussion</h3>
+
+      <p>
+        I thought it'd be interesting to see which police areas of San Francisco has the most records, which would be in Central.
+      </p>
+
+      <h3>Credit</h3>
+
+      <p>
+        Data is from https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783
+      </p>
+    </div>
+  </section>
+
   <hr class="container">
 
   <!-- grade section -->
@@ -212,17 +296,17 @@
         <div class="media-content">
             <p>
               <!-- todo: replace with your information -->
-              <strong>Full Name</strong>
+              <strong>Yen Dah Hsiang</strong>
               <br/>
-              This is a good place to place a brief biography describing your interests and skills, a professional profile photo, and/or links to your Github, Linkedin, and other <em>professional</em> social media accounts.
+              Undergraduate Computer Science Student at University of San Francisco with a passion in making iOS Apps.
               <br/>
               <!-- find brand icons at: https://fontawesome.com/icons?d=gallery&s=brands&m=free -->
-              <a href="https://github.com/">
+              <a href="https://github.com/dustin0116/">
                 <span class="fab fa-github"></span>
                 <span>Github</span>
               </a>
               &bullet;
-              <a href="https://www.linkedin.com/">
+              <a href="https://www.linkedin.com/in/dustinhsiang0116/">
                 <span class="fab fa-linkedin"></span>
                 <span>LinkedIn</span>
               </a>
@@ -255,3 +339,4 @@
 <!-- end body and html -->
 </body>
 </html>
+
