@@ -100,7 +100,7 @@
           d3.csv("policedistrict.csv").then(function(data)) {
             console.log(data);
             data.forEach(function(d) {
-              d.Count = +d.Count;
+              d.Records = +d.Records;
             });
 
             x.domain(data.map(function(d) { return d.Disctrict; }));
